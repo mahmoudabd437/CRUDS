@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    margin: 0;
+    background-color: rgb(44, 44, 44);
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.head {
+    text-align: center;
+    color: white;
+}
+
+.head h2 {
+    margin: 10px 0 0;
+}
+
+.head p {
+    margin: 0;
+    text-transform: uppercase;
+}
+
+input {
+    outline: none;
+    background-color: rgb(27, 27, 27);
+    color: white;
+    border: none;
+    padding: 10px 4px;
+    margin-bottom: 10px !important;
+    border-radius: 4px;
+    transition: .3s;
+}
+
+input:focus {
+    background-color: black;
+    transform: scale(1.05);
+}
+
+::placeholder {
+    color: #777;
+}
+
+.title,
+.category,
+.count {
+    width: 100%;
+}
+
+.price,
+.tax,
+.ads,
+.discount {
+    width: calc((100% - 15px)/5) !important;
+}
+
+small {
+    background-color: rgb(129, 13, 13);
+    padding: 5px;
+    border-radius: 2px;
+    display: inline-flex;
+    color: white;
+}
+
+small::before {
+    content: 'Total :';
+}
+
+/* .prices {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+} */
+button {
+    background-color: rgb(63, 12, 146);
+    outline: none;
+    border: none;
+    border-radius: 40px;
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+}
+
+button:hover {
+    background-color: rgb(72, 12, 168);
+    letter-spacing: 1.2px;
+}
+
+.create {
+    width: 100%;
+    padding: 5px 3px;
+}
+
+.output {
+    margin-top: 10px;
+}
+
+.output .search {
+    width: 100%;
+}
+
+.searchs {
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+    margin-bottom: 10px;
+}
+
+.output .Scategory,
+.output .Stitle {
+    padding: 5px 3px;
+    flex: 1;
+}
+
+.output .delete {
+    width: 100%;
+    padding: 5px 3px;
+}
+
+table {
+    width: 100%;
+    color: white;
+    text-align: center;
+    margin: 5px 0;
+}
+
+table tr th {
+    text-transform: uppercase;
+}
+
+th,
+td {
+    padding: 5px;
+}
+
+.update,
+.delete {
+    padding: 6px 10px;
+}

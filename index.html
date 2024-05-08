@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/master.CSS">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>CRUDS</title>
+</head>
+
+<body>
+
+</body>
+<div class="head">
+    <h2>CRUDS</h2>
+    <p>product management system</p>
+</div>
+
+<div class="container">
+
+    <div class="inputs">
+        <input type="text" class="title" placeholder="title" id="title">
+        <div class="prices">
+            <input onkeyup="getTotal()" type="number" class="price" placeholder="price" id="price">
+            <input onkeyup="getTotal()" type="number" class="tax" placeholder="tax" id="tax">
+            <input onkeyup="getTotal()" type="number" class="ads" placeholder="ads" id="ads">
+            <input onkeyup="getTotal()" type="number" class="discount" placeholder="discount" id="discount">
+            <small id="total"></small>
+        </div>
+        <input type="number" class="count" placeholder="count" id="count">
+        <input type="text" class="category" placeholder="category" id="category">
+        <button id="create" class="create">Create</button>
+    </div>
+
+    <div class="output">
+        <input onkeyup="searchData(this.value)" type="text" class="search" placeholder="Search" id="search">
+        <div class="searchs">
+            <button onclick="getSearchMode(this.id)" id="searchTitle" class="Stitle">Search By
+                Title</button>
+            <button onclick="getSearchMode(this.id)" id="searchCategory" class="Scategory">Search
+                By Category</button>
+        </div>
+
+    </div>
+    <div id="delete">
+        <!-- we will do this button in JavaScript -->
+        <!-- <button id="delete" class="delete">Delete All</button> -->
+    </div>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>title</th>
+            <th>price</th>
+            <th>taxes</th>
+            <th>ads</th>
+            <th>discount</th>
+            <th>total</th>
+            <th>category</th>
+            <th>update</th>
+            <th>delete</th>
+        </tr>
+        <tbody id="tbody">
+        </tbody>
+    </table>
+    <script src="JavaScript/main.js"></script>
+</div>
+
+</html>
